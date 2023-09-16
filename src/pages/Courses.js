@@ -17,6 +17,7 @@ function Courses() {
               key={key}
               image={menuItem.image}
               name={menuItem.name}
+              add= {menuItem.add}
         
             />
           );

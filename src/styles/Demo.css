@@ -1,0 +1,36 @@
+.demo {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+
+.heading{
+    width: 100%;
+    height: 35%;
+    border:none;
+    text-align: center;
+    background-color: rgb(63, 63, 62);
+    opacity: 0.9;
+}
+.heading h1{
+    margin-top: 100px;
+    color: azure;
+    font-size: 50px;
+    font-weight: 900;
+}
+.heading p{
+    color: antiquewhite;
+    font-size: 20px;
+}
+.demo-btn{
+    width: 500px;
+    height: 50px;
+    border: none;
+    background-color: beige;
+}

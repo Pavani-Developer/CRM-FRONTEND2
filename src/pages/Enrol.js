@@ -4,6 +4,11 @@ import { useState } from "react";
 import "../styles/Enrol.css";
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import BannerImage from "../assets/enrol.jpg";
+import validator from "validator";
+import ReportProblemIcon from '@mui/icons-material/ReportProblem';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 
@@ -14,6 +19,8 @@ const Enrol = () => {
     const [emailid, setEmailid] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
     const [course, setCourse] = useState("");
+    const [emailmessage, setEmailmessage] = useState("");
+    const [phonemessage, setPhonemessage] = useState("");
 
 
     function handleSubmit(){
@@ -25,10 +32,34 @@ const Enrol = () => {
           phoneNumber: phoneNumber,
           course:course,
         }).then((response)=>{
-          console.log(response)
+          console.log(response);
+          notify();
         })
-          
+        
         };
+        function notify() {
+          toast("Wow so easy!");
+        };
+        //Validation for Email
+        const validateEmail = (e) => {
+          const email = e.target.value;
+      
+          if (validator.isEmail(email)) {
+            setEmailmessage("Thank you");
+          } else {
+            setEmailmessage("Please, enter valid Email!");
+          }
+        };
+        //Validation for Phone Number
+        const validatePhone = (e) => {
+          const phone = e.target.value;
+      
+          if (validator.isMobilePhone(phone)) {
+            setPhonemessage("Thank you");
+          } else {
+            setPhonemessage("Please, enter valid Mobile Number!");
+          }
+      };
   return (
     <div className='enrol-page' style={{ backgroundImage: `url(${BannerImage})` }}>
         <div className='enrol-content'>
@@ -39,7 +70,7 @@ const Enrol = () => {
             <h1 style={{textAlign:'center'}}>Enroll Here</h1>
         <form onSubmit={handleSubmit}>
             
-        <label for="fname">First Name:</label>
+        <label htmlFor="fname">First Name:</label>
         <input
           type="text"
           value={firstname}
@@ -66,9 +97,13 @@ const Enrol = () => {
           placeholder="Email"
           id='email'
           required
-          onChange={(e) => setEmailid(e.target.value)}
+          onChange={(e) => setEmailid(e.target.value) || validateEmail(e) }
         />
         <br />
+        <span
+        style={{fontWeight: "bold",color: "brown"}} >
+        {emailmessage}
+        </span>
         <label htmlFor="phn">Mobile Number:</label>
         <input
           type="text"
@@ -76,10 +111,15 @@ const Enrol = () => {
           placeholder="Mobile Number"
           id='phn'
           required
-          onChange={(e) => setPhoneNumber(e.target.value)}
+          onChange={(e) => setPhoneNumber(e.target.value) ||
+          validatePhone(e) }
         />
         <br />
-        <label htmlFor="course">Course :</label>
+        <span
+        style={{fontWeight: "bold",color: "brown"}} >
+        {phonemessage}
+        </span>
+        <label htmlFor="course">Course:</label>
         <input
           type="text"
           value={course}
@@ -89,7 +129,8 @@ const Enrol = () => {
           onChange={(e) => setCourse(e.target.value)}
         />
         <br />
-        <button type="submit">Enroll</button>
+        <button type="submit" onClick={notify}>Enroll</button>
+        <ToastContainer />
 
         
       </form>

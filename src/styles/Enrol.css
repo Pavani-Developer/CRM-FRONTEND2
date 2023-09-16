@@ -39,7 +39,7 @@
     
     .box input {
       width: 95%;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       padding: 10px;
       font-size: 15px;
       border-radius: 15px;
@@ -101,7 +101,7 @@
     .box {
         background-image: linear-gradient(to right, rgb(228, 131, 21) , rgb(237, 241, 120));
         padding: 20px;
-        height: 650px;
+        height: 700px;
         width: 500px;
         margin-bottom: 300px;
         margin-left: 0px;
@@ -177,7 +177,7 @@
     .box {
         background-image: linear-gradient(to right, rgb(228, 131, 21) , rgb(237, 241, 120));
         padding: 20px;
-        height: 450px;
+        height: 550px;
         width: 300px;
         margin-bottom: 300px;
         margin-left: 0px;

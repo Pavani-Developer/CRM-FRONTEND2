@@ -14,6 +14,9 @@
     padding-left: 100px;
     
   }
+  .dropdown button{
+    margin-left: 0px;
+  }
   
   .navbar .leftSide img {
     width: 120px;
@@ -31,17 +34,19 @@
   .navbar a {
     color: rgb(4, 4, 4);
     text-decoration: none;
-    margin: 10px;
+    margin: 0px;
     background-color: white;
     border-radius: 15px;
     padding: 10px;
   }
   
-  .navbar .rightSide button {
+  .navbar .rightSide .toggle-button {
     background-color: transparent;
     border: none;
     color: rgb(11, 11, 11);
     cursor: pointer;
+    position:relative;
+    
   }
   
   .navbar .rightSide svg {
@@ -52,7 +57,7 @@
     padding-left: 0px;
   }
   .navbar #open img {
-    display: none;
+    display: inherit;
   }
   
   .navbar #close img {
@@ -61,7 +66,17 @@
   
   .navbar #open .hiddenLinks {
     display: inherit;
-    margin-left: 30px;
+    margin-left: 450px;
+    margin-top: 800px;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 50px;
+  }
+  .navbar #open .hiddenLinks ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    
   }
   
   .navbar #close .hiddenLinks {
@@ -91,13 +106,16 @@
       padding-right: 50px;
     }
   
-    .navbar .rightSide button {
+    .navbar .rightSide .toggle-button  {
       display: inherit;
+      margin-top: 0px;
+      
+      
     }
   }
   
   @media only screen and (min-width: 900px) {
-    .navbar .rightSide button {
+    .navbar .rightSide .toggle-button  {
       display: none;
     }
   

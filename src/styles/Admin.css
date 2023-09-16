@@ -1,0 +1,41 @@
+.body {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+  }
+.Auth-form-container{
+    margin-left: 500px;
+    margin-top: 150px;
+
+}
+.Auth-form-container label{
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.Auth-form-container input{
+    margin-left: 20px;
+    width: 90%;
+}
+
+.Auth-form{
+    height: 500px;
+    width: 500px;
+    background-image: linear-gradient(to top, rgb(196, 166, 132) , rgb(237, 241, 120));
+    border-radius: 50px;
+    text-align: center;
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.8;
+
+
+}
+.Auth-form-title{
+    font-size: 35px;
+}
+.btn{
+    margin-left: 130px;
+}

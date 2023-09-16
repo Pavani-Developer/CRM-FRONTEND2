@@ -2,12 +2,11 @@
 import axios from "axios";
 import {useState} from "react";
 import '../styles/Admin.css';
-import BannerImage from "../assets/admin.jpg";
-
+import BannerImage from "../assets/login.jpeg";
 // Define the Login function.
 const Admin = () => {
-     const [username, setUsername] = useState("");
-     const [password, setPassword] = useState("");
+     const [username, setUsername] = useState('');
+     const [password, setPassword] = useState('');
      // Create the submit method.
      const submit = async e => {
           e.preventDefault();
@@ -35,7 +34,7 @@ const Admin = () => {
       <div className="Auth-form-container">
         <form className="Auth-form" onSubmit={submit}>
           <div className="Auth-form-content">
-            <h3 className="Auth-form-title">Admin Sign In</h3>
+            <h3 className="Auth-form-title">User Sign In</h3>
             <div className="form-group mt-3">
               <label>Username</label>
               <input className="form-control mt-1" 

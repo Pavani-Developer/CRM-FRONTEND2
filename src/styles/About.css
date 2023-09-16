@@ -1,13 +1,15 @@
 .about {
     width: 100%;
-    height: 90vh;
+    height: 400vh;
     display: flex;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
   }
   
   .aboutTop {
     width: 100%;
-    height: 45%;
+    height: 60%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,12 +20,17 @@
     display: flex;
     flex-direction: column;
     height: 55%;
-    align-items: center;
-    margin-top: 50px;
+    
+    
   }
   
-  .aboutBottom p {
-    width: 1200px;
+  .aboutBottom p{
+    margin-top: 50px;
+    font-size: 22px;
+    height: 300px;
+    width: 900px;
+    float: left;
+    line-height: 35px;
   }
   
   .about .aboutBottom h1 {
@@ -31,7 +38,41 @@
     font-size: 70px;
     color: black;
     height: 30px;
-    display: flex;
-    justify-content: center;
+    margin-top:50px;
     transform: translateY(-40px);
   }
+
+.aboutBottom .content p img{
+  float: right;
+}
+
+.content img{
+  height: 500px;
+  width: 500px;
+  margin-left: 100px;
+  border-radius: 20px;
+}
+.special h2{
+  font-size: 50px;
+}
+
+
+@media only screen and (max-width:900px) {
+  .about {
+    width: 100%;
+    height: 500vh;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+  }
+  .about .aboutBottom h1 {
+    font-weight: 400;
+    font-size: 70px;
+    color: black;
+    height: 30px;
+    margin-top:220px;
+    transform: translateY(-40px);
+  }
+
+}
