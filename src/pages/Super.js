@@ -4,35 +4,35 @@ import {useState} from "react";
 import '../styles/Admin.css';
 import BannerImage from "../assets/login.jpeg";
 // Define the Login function.
-const Admin = () => {
+const Super = () => {
      const [username, setUsername] = useState('');
      const [password, setPassword] = useState('');
      // Create the submit method.
-     const submit = async e => {
-          e.preventDefault();
-          const user = {
-                username: username,
-                password: password
-               };
-          // Create the POST requuest
-          const {data} = await                                                                            
-                         axios.post('http://localhost:8000/api/token/',
-                         user ,{headers: 
-                        {'Content-Type': 'application/json'},
-                         withCredentials: true});
+     const handleSubmit = (event) => {
+      event.preventDefault();
+      axios.post("http://localhost:8000/api/superlogin/",
+        {
+          
+          username: username,
+          password:password,
+        }).then((response)=>{
+          console.log(response)
+          if (response['data'] === true){
+            window.location.href = '/super'
+            console.log(response)
 
-         // Initialize the access & refresh token in localstorage.      
-         localStorage.clear();
-         localStorage.setItem('access_token', data.access);
-         localStorage.setItem('refresh_token', data.refresh);
-         axios.defaults.headers.common['Authorization'] = 
-                                         `Bearer ${data['access']}`;
-         window.location.href = '/'
-    }
+          }else{
+            alert('Invalid Username or Password');
+          }
+          
+          
+        });
+        
+     }
     return(
       <div className="body" style={{ backgroundImage: `url(${BannerImage})` }}>
       <div className="Auth-form-container">
-        <form className="Auth-form" onSubmit={submit}>
+        <form className="Auth-form" onSubmit={handleSubmit}>
           <div className="Auth-form-content">
             <h3 className="Auth-form-title">Superuser Sign In</h3>
             <div className="form-group mt-3">
@@ -66,4 +66,4 @@ const Admin = () => {
 }
 
 
-export default Admin;
+export default Super;

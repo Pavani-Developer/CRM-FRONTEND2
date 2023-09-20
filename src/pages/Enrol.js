@@ -108,7 +108,7 @@ const Enrol = () => {
         <input
           type="text"
           value={phoneNumber}
-          placeholder="Mobile Number"
+          placeholder="Enter your mobile number with your country code"
           id='phn'
           required
           onChange={(e) => setPhoneNumber(e.target.value) ||

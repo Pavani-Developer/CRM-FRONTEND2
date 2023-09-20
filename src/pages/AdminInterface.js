@@ -63,6 +63,14 @@ const AdminInterface = () =>
         }
       )
       }
+      function getdevdata(){
+        axios.get("http://localhost:8000/api/get/dev").then(
+          (response)=>{
+            setData(response.data)
+        
+          }
+        )
+        }
       //Posting Demos data to the backend
       const [course, setCourse] = useState("");
       const [name, setName] = useState("");
@@ -94,6 +102,8 @@ const AdminInterface = () =>
           <Button onClick={getJavadata} variant="contained" color="secondary">Java</Button>
           
           <Button onClick={getTestingdata} variant="contained" color="secondary">Testing</Button>
+
+          <Button onClick={getdevdata} variant="contained" color="secondary">DevOps</Button>
           
       </div>
       <div className="innerbody">

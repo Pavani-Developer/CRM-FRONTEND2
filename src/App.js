@@ -8,7 +8,6 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Enrol from './pages/Enrol'
 import Logout from './pages/Logout';
-import Login from './pages/Login';
 import Admin from './pages/Admin';
 import User from './pages/User';
 import Super from './pages/Super';
@@ -17,11 +16,15 @@ import AdminInterface from './pages/AdminInterface';
 import Join from './pages/Join';
 import Userinterface from './pages/Userinterface';
 import Superinterface from './pages/Superinterface';
-import Example from './pages/Example';
-import Python from './pages/Python';
-import Java from './pages/Java';
-import Dev from './pages/Dev';
-import Power from './pages/Power';
+import Python from './pages/courses/Python';
+import Java from './pages/courses/Java';
+import Dev from './pages/courses/Dev';
+import Power from './pages/courses/Power';
+import Profile from './pages/studentpanel/Profile';
+import Assignment from './pages/studentpanel/Assignment';
+import Attendence from './pages/studentpanel/Attendence';
+import Mock from './pages/studentpanel/Mock';
+import Studenthome from './pages/studentpanel/Studenthome';
 
 
 
@@ -43,11 +46,18 @@ function App() {
         <Route path='/logout' element={<Logout/>}/>
         <Route path='/admininterface' element={<AdminInterface/>}/>
         <Route path='/super' element={<Superinterface/>}/>
+        <Route path='/userinterface' element={<Userinterface/>}/>
         <Route path='/join' element={<Join/>}/>
         <Route path='/courses/pythondetails' element={<Python/>}/>
         <Route path='/courses/javadetails' element={<Java/>}/>
         <Route path='/courses/devdetails' element={<Dev/>}/>
         <Route path='/courses/powerdetails' element={<Power/>}/>
+        <Route path='/profile' element={<Profile/>}/>
+        <Route path='/assignments' element={<Assignment/>}/>
+        <Route path='/attendence' element={<Attendence/>}/>
+        <Route path='/mock' element={<Mock/>}/>
+        <Route path='/studenthome' element={<Studenthome/>}/>
+
       </Routes>
       <Footer/>
     </div>

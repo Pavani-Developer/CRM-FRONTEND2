@@ -30,7 +30,6 @@ function Navbar() {
             <li><Link to='enrol'>Enrol</Link></li>
             <li><Link to='login'>Login</Link></li>
             <li><Link to='logout'>Logout</Link></li>
-            <li><Link to='/admininterface'>AdminInterface</Link></li>
             </ul>
 
             </div>
@@ -43,8 +42,6 @@ function Navbar() {
             <Link to='about'>About</Link>
             <Link to='enrol'>Enrol</Link>
             <Link to='logout'>Logout</Link>
-            <Link to='/admininterface'>AdminInterface</Link>
-            <Link to='/super'>Super</Link>
             <Dropdown>
                   <Dropdown.Toggle variant="success" id="dropdown-basic">
                     Login

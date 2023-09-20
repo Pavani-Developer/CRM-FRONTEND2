@@ -23,9 +23,11 @@ const Superinterface = () => {
   let [pythoncount, setPythonount] = useState([]);
   let [javacount, setJavacount] = useState([]);
   let [testingcount, setTestingcount] = useState([]);
+  let [devcount, setDevcount] = useState([]);
   let [java, setJava] = useState([]);
   let [python, setPython] = useState([]);
   let [testing, setTesting] = useState([]);
+  let [dev, setDev] = useState([]);
   let[bdata,setBdata] = useState([])
   
   function getDataChart(){
@@ -44,6 +46,9 @@ const Superinterface = () => {
           else  if (val.course === 'Testing'){
             setTestingcount(testingcount.push(val))
           }
+          else  if (val.course === 'DevOps' || 'Devops'){
+            setDevcount(devcount.push(val))
+          }
         
        
      })
@@ -51,14 +56,18 @@ const Superinterface = () => {
     setPython(pythoncount.length)
     setJava(javacount.length)
     setTesting(testingcount.length)
+    setDev(devcount.length)
     
-  })
+  }).catch((error)=>{
+    console.log(error);
+  });
    }
    
     const data = [
       { name: "Python", users: python },
       { name: "Java", users: java },
       { name: "Testing", users:testing },
+      { name: "DevOps", users:dev },
       
     ];
    
