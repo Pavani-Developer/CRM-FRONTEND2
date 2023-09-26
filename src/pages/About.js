@@ -19,6 +19,7 @@ function About() {
         <img id='class-img' src={classimg} alt="image"/>
         </div>
         <div className="special">
+          
         <h2>What's special about VCUBE?</h2>
         <h3>LEARN ANYTHING ONLINE, OFFLINE AND CORPORATE TRAININGS</h3>
         <p>Online information technology courses, online computer programming programmes and information

@@ -1,15 +1,14 @@
-/*.user-body {
+.user-body {
     width: 100%;
-    height: 120vh;
     color: aliceblue;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }*/
+  }
 
   .user-nav {
     background-color: #6f4907;
-    height: 80px;
+    height: 100px;
     display: flex;
     justify-content: start;
     align-items: center;
