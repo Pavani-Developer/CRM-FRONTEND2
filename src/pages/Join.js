@@ -19,7 +19,8 @@ const Join = () => {
     const [phonemessage, setPhonemessage] = useState("");
 
 
-    function handleSubmit(){
+    const handleSubmit = (e) => {
+      e.preventDefault();
         axios.post("http://localhost:8000/api/joinpost/",
         {
           name: name,
@@ -30,6 +31,7 @@ const Join = () => {
           course:course,
         }).then((response)=>{
           console.log(response)
+          alert("User Successfully created")
         }).catch((error) => {
           console.log('Error', error);
         })

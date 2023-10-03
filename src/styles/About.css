@@ -1,8 +1,9 @@
+.about-body{
+  height: 350vh;
+}
 .about {
     width: 100%;
-    height: 400vh;
-    display: flex;
-    flex-direction: column;
+    height: 200vh;
     background-repeat: no-repeat;
     background-size: 100% 50%;
   }
@@ -10,7 +11,6 @@
   .aboutTop {
     width: 100%;
     height: 60%;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -24,13 +24,16 @@
     
   }
   
-  .aboutBottom p{
-    margin-top: 50px;
-    font-size: 22px;
-    height: 300px;
-    width: 900px;
-    float: left;
-    line-height: 35px;
+.aboutBottom p{
+  margin-top: 20px;
+  font-size: 22px;
+  height: 300px;
+  width: 800px;
+  float: left;
+  line-height: 45px;
+  font-size: 25px;
+  color: black;
+    
   }
   
   .about .aboutBottom h1 {
@@ -38,23 +41,31 @@
     font-size: 70px;
     color: black;
     height: 30px;
-    margin-top:50px;
     transform: translateY(-40px);
   }
 
-.aboutBottom .content p img{
-  float: right;
-}
 
 .content img{
   height: 500px;
   width: 500px;
-  margin-left: 100px;
   border-radius: 20px;
+  margin-bottom: 0px;
+
 }
 .special h2{
   font-size: 50px;
+  margin-top: 0px;
+  font-weight: 600px;
 }
+.special h3{
+  text-decoration: underline;
+}
+.special p{
+  font-size: 25px;
+  color: black;
+  width: 800px;
+}
+
 
 
 @media only screen and (max-width:900px) {

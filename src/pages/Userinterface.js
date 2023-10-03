@@ -1,13 +1,13 @@
 import React,{useState} from 'react';
-import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
-import { Link, Routes ,Route} from 'react-router-dom';
-import ReorderIcon from '@mui/icons-material/Reorder';
+//import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+//import { Link, Routes ,Route} from 'react-router-dom';
+//import ReorderIcon from '@mui/icons-material/Reorder';
 import "../styles/Userinterface.css";
-import ClearIcon from '@mui/icons-material/Clear';
-import Profile from './studentpanel/Profile';
-import Assignment from './studentpanel/Assignment';
-import Attendence from './studentpanel/Attendence';
-import Mock from './studentpanel/Mock';
+//import ClearIcon from '@mui/icons-material/Clear';
+//import Profile from './studentpanel/Profile';
+//import Assignment from './studentpanel/Assignment';
+//import Attendence from './studentpanel/Attendence';
+//import Mock from './studentpanel/Mock';
 
 
 
@@ -17,14 +17,17 @@ const Userinterface = () => {
   const showSidebar = () => setSidebar(!sidebar);
   return (
     <>
+      <div className='profile'>
+          <p>Profile</p>
+        </div>
     <div className='user-body'>
     
-    <div className='user-nav'>
+    {/*<div className='user-nav'>
       <Link to='#' className='menu-bar'>
           <ReorderIcon  id = 'bars' onClick={showSidebar} />
       </Link>
     </div>
-    <Routes>
+    {/*<Routes>
         <Route path='/profile' element={<Profile/>}/>
         <Route path='/assignments' element={<Assignment/>}/>
         <Route path='/attendence' element={<Attendence/>}/>
@@ -44,7 +47,17 @@ const Userinterface = () => {
             <li>  <Link to='/mock'>Mock</Link></li>
             
           </ul>
-        </nav>
+  </nav>*/}
+      
+        <div className='assig'>
+          <p>Assignments</p>
+        </div>
+        <div className='mock'>
+          <p>mock</p>
+        </div>
+        <div className='attendence'>
+          <p>Attendence</p>
+        </div>
     
     </div>
     

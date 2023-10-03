@@ -1,9 +1,10 @@
 .user-body {
     width: 100%;
-    color: aliceblue;
+    height: 1000px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
   }
 
   .user-nav {
@@ -92,3 +93,30 @@
   span {
     margin-left: 16px;
   }
+.profile{
+  height: 300px;
+  width: 100%;
+  border-style: groove;
+  margin-bottom: 100px;
+}
+  .assig{
+    height: 500px;
+    width: 500px;
+    border-style: groove;
+    margin-right: 10px;
+  }
+  .mock{
+    height: 500px;
+    width: 500px;
+    border-style: groove;
+    margin-right: 10px;
+
+  }
+  .attendence{
+    height: 500px;
+    width: 500px;
+    border-style: groove;
+    margin-right: 10px;
+
+  }
+

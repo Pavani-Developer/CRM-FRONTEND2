@@ -6,6 +6,7 @@ import "../styles/About.css";
 
 function About() {
   return (
+    <div className="about-body">
     <div className="about" style={{ backgroundImage: `url(${BannerImage})` }}>
       <div
         className="aboutTop"
@@ -18,20 +19,22 @@ function About() {
         </p>
         <img id='class-img' src={classimg} alt="image"/>
         </div>
+        </div>
         <div className="special">
           
         <h2>What's special about VCUBE?</h2>
         <h3>LEARN ANYTHING ONLINE, OFFLINE AND CORPORATE TRAININGS</h3>
         <p>Online information technology courses, online computer programming programmes and information
         technology courses for novices are all available online. Take Advantage of both online and offline
-        resources. Employee training is both important and cost effective in terms of advancing their careers.</p>
+        resources. Employee training is both important and cost effective in terms of advancing their careers.</p><br/><br/>
         <h3>EXCEL YOUR SKILLSET</h3>
         <p>Master new online information technology courses or a specific domain with our superb online computer programming lessons that turn novices into specialists.</p>
         <h3>TALK TO OUR EXPERTS</h3>
         <p>We offer 24/7 help to all students so that they may get their questions answered quickly and easily at any time.</p>
         </div>
-      </div>
       
+      
+    </div>
     </div>
   );
 }

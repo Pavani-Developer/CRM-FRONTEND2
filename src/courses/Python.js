@@ -9,7 +9,8 @@ import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 const Python = () => {
   return (
     <>
-    <div className='python-content' style={{ backgroundImage: `url(${BannerImage})` }}>
+    <div className='power-body' style={{ backgroundImage: `url(${BannerImage})` }}>
+    <div className='python-content' >
       <div className='main-content'>
       <div className='content-details'>
       <h1>What is Python?</h1>
@@ -21,6 +22,7 @@ const Python = () => {
       <p>Image Credit: https://starship-knowledge.com/<br/>awesome-python-data-science-libraries</p>
       </div>
   
+      </div>
       </div>
       <div className='course-highlets'>
         <h1>Key Highlights</h1>
@@ -404,14 +406,28 @@ const Python = () => {
     <hr/>
     <details >
         <summary>Data Structures & Algorithms for some extent</summary>
-          <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+          <ol><li>Toggle Content</li></ol>
     </details>
     <hr/>
     <details >
-        <summary>Epcot Center</summary>
-          <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+        <summary>Live Project</summary>
+        <ol><li>Toggle Content</li></ol>
     </details>
     <hr/>
+    <details >
+        <summary>Project Deployment</summary>
+        <ol><li>Toggle Content</li></ol>
+    </details>
+    <hr/>
+    <details >
+        <summary>Mock Interviews</summary>
+        <ol><li>Toggle Content</li></ol>
+    </details>
+    <hr/>
+    <details >
+        <summary>Weekly Tests</summary>
+        <ol><li>Toggle Content</li></ol>
+    </details>
     </div>
       </div>
     </>

@@ -52,11 +52,11 @@ function App() {
         <Route path='/courses/javadetails' element={<Java/>}/>
         <Route path='/courses/devdetails' element={<Dev/>}/>
         <Route path='/courses/powerdetails' element={<Power/>}/>
-        <Route path='/profile' element={<Profile/>}/>
+        {/*<Route path='/profile' element={<Profile/>}/>
         <Route path='/assignments' element={<Assignment/>}/>
         <Route path='/attendence' element={<Attendence/>}/>
         <Route path='/mock' element={<Mock/>}/>
-        <Route path='/studenthome' element={<Studenthome/>}/>
+  <Route path='/studenthome' element={<Studenthome/>}/>*/}
 
       </Routes>
       <Footer/>
