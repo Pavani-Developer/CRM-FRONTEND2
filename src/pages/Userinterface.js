@@ -11,11 +11,11 @@ import "../styles/Userinterface.css";
 
 
 
-const Userinterface = () => {
-  const [sidebar, setSidebar] = useState(false);
+const Userinterface = (props) => {
 
-  const showSidebar = () => setSidebar(!sidebar);
-  return (
+
+  return(
+    
     <>
       <div className='profile'>
           <p>Profile</p>

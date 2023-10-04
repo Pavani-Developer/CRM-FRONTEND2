@@ -30,6 +30,20 @@ function Navbar() {
             <li><Link to='enrol'>Enrol</Link></li>
             <li><Link to='login'>Login</Link></li>
             <li><Link to='logout'>Logout</Link></li>
+            <Dropdown>
+                  <Dropdown.Toggle variant="success" id="dropdown-basic">
+                    Login
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Link to= 'admin'><Dropdown.Item href="admin">Admin</Dropdown.Item></Link>
+                    <Link to='user'><Dropdown.Item href="user">User</Dropdown.Item></Link>
+                    <Link to ='superuser'><Dropdown.Item href="superuser">Super User</Dropdown.Item></Link>
+                  </Dropdown.Menu>
+                </Dropdown>
+            <button  className = "toggle-button" onClick={toggleNavbar}>
+            <ReorderIcon />
+            </button>
             </ul>
 
             </div>

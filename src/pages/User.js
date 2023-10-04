@@ -3,6 +3,7 @@ import axios from "axios";
 import {useState} from "react";
 import '../styles/Admin.css';
 import BannerImage from "../assets/login.jpeg";
+import Userinterface from './Userinterface';
 // Define the Login function.
 const Admin = () => {
      const [username, setUsername] = useState('');
@@ -26,6 +27,9 @@ const Admin = () => {
           }
           
           
+        }).catch((error)=>{
+          console.log(error);
+          alert('Invalid Username or Password');
         });
         
      }

@@ -26,6 +26,9 @@ const Super = () => {
           }
           
           
+        }).catch((error)=>{
+          console.log(error);
+          alert('Invalid Username or Password');
         });
         
      }

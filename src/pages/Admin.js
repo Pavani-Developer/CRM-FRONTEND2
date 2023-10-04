@@ -18,7 +18,7 @@ const Admin = () => {
           username: username,
           password:password,
         }).then((response)=>{
-          console.log(response)
+          
           if (response['data'] === true){
             window.location.href = '/admininterface'
             console.log(response)
@@ -28,6 +28,9 @@ const Admin = () => {
           }
           
           
+        }).catch((error)=>{
+          console.log(error);
+          alert('Invalid Username or Password');
         });
         
      }
