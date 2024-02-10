@@ -36,6 +36,7 @@ const AdminInterface = () =>
           }
          })()};
      }, []);*/
+     
      //Fetching only python data from backend
      let[data,setData] = useState([])
      function getPythondata(){

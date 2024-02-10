@@ -5,7 +5,7 @@ import '../styles/Admin.css';
 import BannerImage from "../assets/login.jpeg";
 import Userinterface from './Userinterface';
 // Define the Login function.
-const Admin = () => {
+const User = () => {
      const [username, setUsername] = useState('');
      const [password, setPassword] = useState('');
      // Create the submit method.
@@ -72,4 +72,4 @@ const Admin = () => {
 }
 
 
-export default Admin;
+export default User;
