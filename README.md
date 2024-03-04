@@ -19,7 +19,6 @@ This Customer Relationship Management (CRM) system is designed to help manage st
 
 - Python 3.x
 - Django 3.x
-- Node.js
 - ReactJS
 - MySQL Database
 
