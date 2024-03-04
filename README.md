@@ -1,6 +1,4 @@
-Certainly! Below is a sample README file for a CRM (Customer Relationship Management) system developed using Django for the backend, ReactJS for the frontend, and MySQL as the database. Feel free to customize it according to your specific project details:
 
----
 
 # Institute CRM System
 
