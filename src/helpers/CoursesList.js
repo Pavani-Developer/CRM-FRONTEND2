@@ -4,7 +4,7 @@ import Devops from "../assets/DevOps.jpeg";
 import Power from "../assets/power-bi.jpg";
 import { Link } from "react-router-dom";
 
-//
+
 export const CoursesList = [
   {
     name: 'Python',
